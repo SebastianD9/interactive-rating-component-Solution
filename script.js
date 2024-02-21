@@ -4,11 +4,17 @@ const rating = document.querySelector('.rating');
 const vote = document.querySelectorAll('.vote');
 let number = document.querySelector('#number');
 
-
+console.log(number.innerHTML)
 
 function thank() {
-    displayThank.style.display='flex';
-    rating.style.display='none';
+    if (number.innerHTML===""){
+        alert('Please select rating before submitting!')
+    }
+    else {
+        displayThank.style.display='flex';
+        rating.style.display='none';
+    }
+   
 
 }
 function result(e) {
