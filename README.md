@@ -1,5 +1,8 @@
 # Frontend Mentor - Interactive rating component
 
+My Solution:
+https://sebastiand9.github.io/interactive-rating-component-Solution/ 
+
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
