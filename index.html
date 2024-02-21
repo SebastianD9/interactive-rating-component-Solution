@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+ 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { color: white; font-size: 11px; font-weight: 100;text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); font-size: 12px; font-weight: 200;}
+  </style>
+</head>
+<body>
+  <main>
+  <!-- Rating state start -->
+  <div class="container rating">
+    <div class="icon-star">
+    <button class="star"><img src="./images/icon-star.svg"></button>
+  </div>
+    <div class="text">
+  <h1>How did we do?</h1>
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+    </div>
+    <div class="voting">
+      <button class="vote" ><p>1</p></button>
+      <button class="vote" ><p>2</p></button>
+      <button class="vote" ><p>3</p></button>
+      <button class="vote" ><p>4</p></button>
+      <button class="vote" ><p>5</p></button>
+    </div>  
+ <button class="Submit"><p>Submit</p></button> 
+ 
+</div>
+
+<div class="container thank">
+  <div class="head-thank">
+    <img src="./images/illustration-thank-you.svg">
+  </div>
+  
+  <div class="rate">You selected <span id="number"></span> out of 5</div>
+
+  <h1>Thank you!</h1>
+
+  <p class="text-thank">We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! </p>
+
+</div>
+</main>
+
+
+<footer>
+  <div class="attribution"> 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sebastian</a>.
+  </div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>

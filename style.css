@@ -1,0 +1,143 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue:  hsl(216, 12%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    font-family: 'Overpass', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    width: 320px;
+    outline: none;
+    justify-content: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, hsl(213, 19%, 15%), hsl(216, 12%, 10%));
+}
+.star{
+    border-radius: 50%;
+    background-color: var(--Dark-Blue);
+    border: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: var(--white);
+    margin-bottom: 20px;
+}
+p{
+    font-size: 15px;
+}
+.text p {
+    margin-bottom: 20px;
+    color: var(--Medium-Grey);
+}
+.voting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.vote{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--Dark-Blue);
+    border: none;
+    width: 15%;
+    height: 20%;
+    color: var(--Medium-Grey);
+    transition: all .3s;
+}
+.vote:hover{
+    background-color: var(--Orange) !important;
+    color: var(--white) !important;
+}
+
+button {
+    cursor: pointer;
+}
+.Submit {
+    background-color: var(--Orange);
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    transition: all .3s;
+    color: var(--white);
+}
+.Submit p {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.Submit:hover{
+    color: var(--Orange);
+    background-color: var(--white);
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+.thank {
+    align-items: center;
+    display: none;
+}
+.rating {
+    display: flex;
+}
+.head-thank{
+    margin-bottom: 20px;
+}
+.rate {
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    color: var(--Orange);
+    border-radius: 20px;
+    background: var(--Dark-Blue);
+}
+.thank h1 {
+    margin-bottom: 5px;
+}
+.text-thank {
+    text-align: center;
+    color: var(--Medium-Grey);
+}
+
+@media screen and (min-width: 888px) {
+    .container {
+        padding: 40px;
+        width: 400px;
+    }
+    .vote{
+        scale: 1.1;
+        width: 12%;
+        height: 20%;
+    }
+    .voting{
+        margin-bottom: 30px;
+    }
+    .text p {
+        margin-bottom: 25px;
+    }
+}
